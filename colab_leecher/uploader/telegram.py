@@ -29,7 +29,7 @@ async def progress_bar(current, total):
 async def upload_file(file_path, real_name):
     global Transfer, MSG
     BotTimes.task_start = datetime.now()
-    caption = f"<{BOT.Options.caption}>{BOT.Setting.prefix} {real_name} {BOT.Setting.suffix}</{BOT.Options.caption}>"
+    caption = f"<{BOT.Options.caption}> {real_name} </{BOT.Options.caption}><b>\n\n➖➖➖➖\n👈جهت دریافت سریال های دوبله فارسی و بدون سانسور لطفا کانال ما رو دنبال کنید:\n🆔 @PersiaSer</b>"
     type_ = fileType(file_path)
 
     f_type = type_ if BOT.Options.stream_upload else "document"
